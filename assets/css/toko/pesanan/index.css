@@ -1,0 +1,61 @@
+        :root { --primary:#2563eb; }
+        body { background:#f3f4f6; font-family:'Segoe UI',sans-serif; }
+        .navbar {
+            background:#fff;border-bottom:1px solid #e5e7eb;
+            padding:12px 0;position:sticky;top:0;z-index:100;
+        }
+        .navbar-brand { font-weight:700;color:var(--primary) !important; }
+        .nav-icon {
+            position:relative;width:38px;height:38px;border-radius:8px;
+            border:1px solid #e5e7eb;display:inline-flex;
+            align-items:center;justify-content:center;
+            color:#374151;text-decoration:none;transition:all .2s;
+        }
+        .nav-icon:hover { background:#f3f4f6; }
+        .nav-badge {
+            position:absolute;top:-6px;right:-6px;
+            background:#ef4444;color:#fff;font-size:.65rem;
+            font-weight:700;width:18px;height:18px;border-radius:50%;
+            display:flex;align-items:center;justify-content:center;
+        }
+        .status-tabs {
+            display:flex;gap:6px;overflow-x:auto;
+            padding:16px 0 4px;margin-bottom:16px;
+        }
+        .status-tabs::-webkit-scrollbar { height:0; }
+        .status-tab {
+            padding:6px 16px;border-radius:20px;font-size:.8rem;
+            font-weight:600;white-space:nowrap;cursor:pointer;
+            border:1px solid #e5e7eb;background:#fff;
+            color:#6b7280;text-decoration:none;transition:all .15s;
+        }
+        .status-tab.active,.status-tab:hover {
+            background:var(--primary);color:#fff;border-color:var(--primary);
+        }
+        .pesanan-card {
+            background:#fff;border:1px solid #e5e7eb;
+            border-radius:12px;padding:20px;margin-bottom:12px;
+            transition:box-shadow .2s;
+        }
+        .pesanan-card:hover { box-shadow:0 4px 16px rgba(0,0,0,.08); }
+        .badge-status {
+            padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:600;
+        }
+        .badge-menunggu  { background:#fef3c7;color:#92400e; }
+        .badge-diproses  { background:#dbeafe;color:#1e40af; }
+        .badge-dikirim   { background:#e0e7ff;color:#3730a3; }
+        .badge-selesai   { background:#dcfce7;color:#166534; }
+        .badge-dibatalkan{ background:#fee2e2;color:#991b1b; }
+        .btn-detail {
+            padding:6px 16px;border-radius:8px;font-size:.8rem;
+            font-weight:600;border:1px solid var(--primary);
+            color:var(--primary);background:#fff;text-decoration:none;
+            transition:all .2s;
+        }
+        .btn-detail:hover {
+            background:var(--primary);color:#fff;
+        }
+        .empty-state {
+            text-align:center;padding:60px 20px;color:#9ca3af;
+        }
+        .empty-state i { font-size:3rem;margin-bottom:12px;display:block; }

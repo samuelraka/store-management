@@ -1,0 +1,109 @@
+        :root { --primary:#2563eb; }
+        body { background:#f3f4f6; font-family:'Segoe UI',sans-serif; }
+        .navbar {
+            background:#fff;border-bottom:1px solid #e5e7eb;
+            padding:12px 0;position:sticky;top:0;z-index:100;
+        }
+        .navbar-brand { font-weight:700;color:var(--primary) !important;font-size:1.1rem; }
+        .nav-icon {
+            position:relative;display:inline-flex;align-items:center;
+            justify-content:center;width:38px;height:38px;
+            border-radius:8px;border:1px solid #e5e7eb;
+            color:#374151;text-decoration:none;transition:all .2s;
+        }
+        .nav-icon:hover { background:#f3f4f6;color:var(--primary); }
+        .nav-badge {
+            position:absolute;top:-6px;right:-6px;
+            background:#ef4444;color:#fff;font-size:.65rem;
+            font-weight:700;width:18px;height:18px;border-radius:50%;
+            display:flex;align-items:center;justify-content:center;
+        }
+        .sidebar-filter {
+            background:#fff;border:1px solid #e5e7eb;
+            border-radius:12px;padding:20px;
+            position:sticky;top:72px;
+        }
+        .filter-title {
+            font-size:.8rem;font-weight:700;color:#6b7280;
+            text-transform:uppercase;letter-spacing:.8px;
+            margin-bottom:12px;
+        }
+        .kat-item {
+            display:flex;align-items:center;justify-content:space-between;
+            padding:8px 12px;border-radius:8px;cursor:pointer;
+            font-size:.875rem;color:#374151;text-decoration:none;
+            transition:all .2s;margin-bottom:2px;
+        }
+        .kat-item:hover,.kat-item.active {
+            background:#eff6ff;color:var(--primary);font-weight:600;
+        }
+        .kat-count {
+            background:#f3f4f6;color:#9ca3af;font-size:.72rem;
+            padding:2px 8px;border-radius:10px;font-weight:600;
+        }
+        .kat-item.active .kat-count {
+            background:#dbeafe;color:#1d4ed8;
+        }
+        .produk-card {
+            background:#fff;border:1px solid #e5e7eb;
+            border-radius:12px;overflow:hidden;
+            transition:box-shadow .2s,transform .2s;
+            height:100%;display:flex;flex-direction:column;
+        }
+        .produk-card:hover {
+            box-shadow:0 8px 24px rgba(37,99,235,.1);
+            transform:translateY(-2px);
+        }
+        .produk-img {
+            height:160px;background:#f3f4f6;
+            display:flex;align-items:center;justify-content:center;
+            font-size:3rem;color:#d1d5db;
+        }
+        .produk-body { padding:14px;flex:1;display:flex;flex-direction:column; }
+        .produk-kat {
+            font-size:.7rem;background:#eff6ff;color:#1d4ed8;
+            padding:2px 8px;border-radius:4px;
+            display:inline-block;margin-bottom:6px;font-weight:600;
+        }
+        .produk-nama {
+            font-weight:700;color:#111827;font-size:.92rem;
+            margin-bottom:4px;line-height:1.3;
+        }
+        .produk-harga {
+            font-size:1rem;font-weight:700;color:var(--primary);
+            margin-bottom:8px;
+        }
+        .produk-stok {
+            font-size:.75rem;margin-bottom:12px;
+        }
+        .stok-ok   { color:#16a34a; }
+        .stok-warn { color:#f59e0b; }
+        .btn-beli {
+            width:100%;padding:9px;border-radius:8px;
+            background:var(--primary);color:#fff;
+            border:none;font-weight:600;font-size:.85rem;
+            transition:background .2s;cursor:pointer;
+            margin-top:auto;
+        }
+        .btn-beli:hover { background:#1d4ed8; }
+        .sort-bar {
+            background:#fff;border:1px solid #e5e7eb;
+            border-radius:10px;padding:12px 16px;
+            display:flex;align-items:center;gap:12px;
+            margin-bottom:16px;flex-wrap:wrap;
+        }
+        .sort-btn {
+            padding:5px 14px;border-radius:20px;font-size:.8rem;
+            font-weight:600;border:1px solid #e5e7eb;
+            background:#fff;color:#6b7280;cursor:pointer;
+            transition:all .15s;text-decoration:none;
+        }
+        .sort-btn.active,.sort-btn:hover {
+            background:var(--primary);color:#fff;
+            border-color:var(--primary);
+        }
+        .empty-state {
+            text-align:center;padding:60px 20px;
+            color:#9ca3af;
+        }
+        .empty-state i { font-size:3rem;margin-bottom:12px;display:block; }

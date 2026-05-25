@@ -1,0 +1,91 @@
+        :root { --primary:#2563eb; }
+        body { background:#f3f4f6; font-family:'Segoe UI',sans-serif; }
+        .navbar {
+            background:#fff;border-bottom:1px solid #e5e7eb;
+            padding:12px 0;position:sticky;top:0;z-index:100;
+        }
+        .navbar-brand { font-weight:700;color:var(--primary) !important; }
+        .nav-icon {
+            width:38px;height:38px;border-radius:8px;
+            border:1px solid #e5e7eb;display:inline-flex;
+            align-items:center;justify-content:center;
+            color:#374151;text-decoration:none;
+        }
+        .info-card {
+            background:#fff;border:1px solid #e5e7eb;
+            border-radius:12px;padding:20px;margin-bottom:16px;
+        }
+        .card-title {
+            font-size:.8rem;font-weight:700;color:#6b7280;
+            text-transform:uppercase;letter-spacing:.8px;
+            margin-bottom:14px;padding-bottom:8px;
+            border-bottom:1px solid #f3f4f6;
+        }
+        .info-row {
+            display:flex;justify-content:space-between;
+            padding:7px 0;border-bottom:1px solid #f9fafb;
+            font-size:.875rem;
+        }
+        .info-row:last-child { border-bottom:none; }
+        .info-label { color:#6b7280; }
+        .info-value { font-weight:600;color:#111827;text-align:right; }
+
+        /* Timeline */
+        .timeline {
+            display:flex;align-items:flex-start;
+            justify-content:space-between;
+            position:relative;padding:0 8px;
+        }
+        .timeline::before {
+            content:'';position:absolute;top:18px;left:8px;
+            right:8px;height:2px;background:#e5e7eb;z-index:0;
+        }
+        .tl-item {
+            display:flex;flex-direction:column;
+            align-items:center;gap:6px;flex:1;
+            position:relative;z-index:1;
+        }
+        .tl-icon {
+            width:36px;height:36px;border-radius:50%;
+            display:flex;align-items:center;justify-content:center;
+            font-size:1rem;border:2px solid #e5e7eb;
+            background:#fff;transition:all .3s;
+        }
+        .tl-icon.done {
+            background:#2563eb;border-color:#2563eb;color:#fff;
+        }
+        .tl-icon.current {
+            background:#fff;border-color:#2563eb;color:#2563eb;
+            box-shadow:0 0 0 3px rgba(37,99,235,.2);
+        }
+        .tl-label {
+            font-size:.7rem;color:#9ca3af;text-align:center;
+            font-weight:600;
+        }
+        .tl-label.done,.tl-label.current { color:#2563eb; }
+
+        /* Detail barang */
+        .item-row {
+            display:flex;align-items:center;gap:12px;
+            padding:12px 0;border-bottom:1px solid #f3f4f6;
+        }
+        .item-row:last-child { border-bottom:none; }
+        .item-img {
+            width:48px;height:48px;border-radius:8px;
+            background:#f3f4f6;display:flex;align-items:center;
+            justify-content:center;font-size:1.2rem;color:#d1d5db;
+            flex-shrink:0;
+        }
+        .badge-status {
+            padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:600;
+        }
+        .badge-menunggu  { background:#fef3c7;color:#92400e; }
+        .badge-diproses  { background:#dbeafe;color:#1e40af; }
+        .badge-dikirim   { background:#e0e7ff;color:#3730a3; }
+        .badge-selesai   { background:#dcfce7;color:#166534; }
+        .badge-dibatalkan{ background:#fee2e2;color:#991b1b; }
+
+        .resi-box {
+            background:#eff6ff;border:1px solid #bfdbfe;
+            border-radius:8px;padding:12px 16px;
+        }

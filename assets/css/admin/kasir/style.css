@@ -1,0 +1,74 @@
+        :root { --sidebar-w:250px; --primary:#2563eb; }
+        body { background:#f3f4f6; font-family:'Segoe UI',sans-serif; }
+        .sidebar {
+            position:fixed;top:0;left:0;width:var(--sidebar-w);
+            height:100vh;background:#1e2a3b;overflow-y:auto;z-index:1000;
+        }
+        .sidebar-brand { padding:20px 20px 16px; border-bottom:1px solid rgba(255,255,255,.1); }
+        .sidebar-brand h6 { color:#fff;font-weight:700;margin:0; }
+        .sidebar-brand small { color:#94a3b8;font-size:.75rem; }
+        .sidebar-menu { padding:12px 0; }
+        .menu-label {
+            padding:8px 20px 4px;font-size:.7rem;font-weight:600;
+            color:#64748b;text-transform:uppercase;letter-spacing:.8px;
+        }
+        .sidebar a {
+            display:flex;align-items:center;gap:10px;padding:10px 20px;
+            color:#94a3b8;text-decoration:none;font-size:.9rem;
+            border-left:3px solid transparent;transition:all .2s;
+        }
+        .sidebar a:hover,.sidebar a.active {
+            color:#fff;background:rgba(255,255,255,.06);border-left-color:var(--primary);
+        }
+        .sidebar a i { font-size:1rem;width:20px; }
+        .main { margin-left:var(--sidebar-w);min-height:100vh; }
+        .topbar {
+            background:#fff;border-bottom:1px solid #e5e7eb;padding:14px 24px;
+            display:flex;align-items:center;justify-content:space-between;
+            position:sticky;top:0;z-index:100;
+        }
+        .topbar h5 { margin:0;font-weight:600;color:#1f2937; }
+        .content { padding:24px; }
+        .kasir-grid {
+            display:grid;
+            grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+            gap:16px;
+        }
+        .kasir-card {
+            background:#fff;border:1px solid #e5e7eb;
+            border-radius:12px;padding:20px;
+            transition:box-shadow .2s;
+        }
+        .kasir-card:hover { box-shadow:0 4px 16px rgba(0,0,0,.08); }
+        .kasir-avatar {
+            width:52px;height:52px;border-radius:50%;
+            background:#eff6ff;display:flex;align-items:center;
+            justify-content:center;font-size:1.4rem;color:var(--primary);
+            font-weight:700;flex-shrink:0;overflow:hidden;
+        }
+        .kasir-avatar img { width:100%;height:100%;object-fit:cover; }
+        .badge-aktif { background:#dcfce7;color:#166534;padding:3px 10px;border-radius:20px;font-size:.72rem;font-weight:600; }
+        .badge-nonaktif { background:#fee2e2;color:#991b1b;padding:3px 10px;border-radius:20px;font-size:.72rem;font-weight:600; }
+        .stat-mini {
+            background:#f9fafb;border-radius:8px;padding:10px 14px;
+            display:flex;justify-content:space-between;align-items:center;
+        }
+        .btn-aksi {
+            padding:5px 12px;border-radius:6px;font-size:.78rem;
+            border:1px solid;text-decoration:none;
+            display:inline-flex;align-items:center;gap:4px;cursor:pointer;
+        }
+        .btn-edit { border-color:#d1d5db;color:#374151;background:#fff; }
+        .btn-edit:hover { background:#f3f4f6; }
+        .btn-hapus { border-color:#fca5a5;color:#dc2626;background:#fff; }
+        .btn-hapus:hover { background:#fee2e2; }
+        .tambah-card {
+            background:#f9fafb;border:2px dashed #d1d5db;
+            border-radius:12px;padding:20px;display:flex;
+            flex-direction:column;align-items:center;justify-content:center;
+            gap:8px;cursor:pointer;transition:all .2s;min-height:180px;
+        }
+        .tambah-card:hover { border-color:var(--primary);background:#eff6ff; }
+        .tambah-card i { font-size:2rem;color:#9ca3af; }
+        .tambah-card span { font-size:.85rem;color:#6b7280; }
+        .tambah-card:hover i,.tambah-card:hover span { color:var(--primary); }
